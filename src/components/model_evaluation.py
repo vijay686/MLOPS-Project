@@ -142,7 +142,7 @@ class ModelEvaluation:
             model_evaluation_artifact = ModelEvaluationArtifact(
                 is_model_accepted=evaluate_model_response.is_model_accepted,
                 model_path=model_path,
-                trained_model_path=self.model_trainer_artifact.trained_model_file_path,
+                trained_model_path=self.model_eval_config.trained_model_file_path,
                 changed_accuracy=evaluate_model_response.difference)
 
             logging.info(f"Model evaluation artifact: {model_evaluation_artifact}")
