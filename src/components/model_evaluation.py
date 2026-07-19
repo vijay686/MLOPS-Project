@@ -40,7 +40,7 @@ class ModelEvaluation:
         """
         try:
             # bucket_name = self.model_eval_config.bucket_name
-            model_path = self.model_eval_config.production_model_path
+            model_path = self.model_trainer_artifact.trained_model_file_path
             proj1_estimator = Proj1Estimator(model_path=model_path)
 
             if proj1_estimator.is_model_present(model_path=model_path):
@@ -137,7 +137,7 @@ class ModelEvaluation:
             print("------------------------------------------------------------------------------------------------")
             logging.info("Initialized Model Evaluation Component.")
             evaluate_model_response = self.evaluate_model()
-            model_path = self.model_eval_config.production_model_path
+            model_path = self.model_eval_config.trained_model_file_path
 
             model_evaluation_artifact = ModelEvaluationArtifact(
                 is_model_accepted=evaluate_model_response.is_model_accepted,

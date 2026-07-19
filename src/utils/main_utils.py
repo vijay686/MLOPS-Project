@@ -8,6 +8,8 @@ from pandas import DataFrame
 
 from src.exception import MyException
 from src.logger import logging
+from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
+
 
 
 def read_yaml_file(file_path: str) -> dict:
