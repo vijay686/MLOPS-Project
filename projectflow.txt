@@ -69,3 +69,10 @@ mongodb+srv://vijaykumarkandagatla55_db_user:3srivij58@cluster0.z2xmlbs.mongodb.
       * Select CLI >> agree to condition >> next >> Create Access Key >> download csv file
       * Set env variables with above csv values using below method:
       ====================================================================================
+
+      
+24. Now we will start our work on "Model Evaluation" and "Model Pusher" component.
+
+25. Create the code structure of "Prediction Pipeline" and setup your app.py
+26. Add "static" and "template" dir to the project.
+   
